@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships | CareerConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jobs.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html">Career<span>Connect</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="internships.html">Internships</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1>Explore Internships</h1>
+    <p>Learn, grow and gain practical experience.</p>
+</section>
+
+<section class="listing-section">
+    <div class="search-bar">
+        <input type="text" id="internshipSearch" placeholder="Search internships...">
+        <select id="internshipCategory">
+            <option value="">All Categories</option>
+            <option value="Software">Software Development</option>
+            <option value="Data">Data Science</option>
+            <option value="Design">UI/UX Design</option>
+            <option value="Marketing">Marketing</option>
+        </select>
+        <button class="btn-primary" id="searchInternships">Search</button>
+    </div>
+
+    <div id="internshipsContainer" class="card-grid"></div>
+</section>
+
+<script src="data/opportunities.js"></script>
+<script src="js/main.js"></script>
+<script src="js/internships.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | CareerConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="auth-page">
+    <div class="auth-card">
+        <a href="index.html" class="logo">Career<span>Connect</span></a>
+        <h2>Create Your Account</h2>
+        <p>Join CareerConnect and explore opportunities.</p>
+
+        <form id="signupForm">
+            <label>Full Name</label>
+            <input type="text" id="signupName" placeholder="Your full name" required>
+
+            <label>Email Address</label>
+            <input type="email" id="signupEmail" placeholder="Your email" required>
+
+            <label>Password</label>
+            <input type="password" id="signupPassword" placeholder="Minimum 6 characters" minlength="6" required>
+
+            <label>Education</label>
+            <select id="signupEducation" required>
+                <option value="">Select Education</option>
+                <option>B.Tech</option>
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>BBA</option>
+                <option>Other</option>
+            </select>
+
+            <button type="submit" class="btn-primary full-btn">Create Account</button>
+        </form>
+
+        <p id="authMessage"></p>
+        <p class="auth-bottom">Already registered?
+            <a href="login.html">Login</a>
+        </p>
+    </div>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

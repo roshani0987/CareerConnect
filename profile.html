@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | CareerConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html">Career<span>Connect</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="internships.html">Internships</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+</header>
+
+<section class="profile-section">
+    <div class="profile-card">
+        <div class="profile-avatar"><i class="fas fa-user"></i></div>
+        <h1 id="profileName">Your Name</h1>
+        <p id="profileEmail">your@email.com</p>
+
+        <form id="profileForm">
+            <label>Full Name</label>
+            <input type="text" id="profileInputName" required>
+
+            <label>Email</label>
+            <input type="email" id="profileInputEmail" required>
+
+            <label>Education</label>
+            <input type="text" id="profileEducation" placeholder="B.Tech CSE">
+
+            <label>Skills</label>
+            <input type="text" id="profileSkills" placeholder="HTML, CSS, JavaScript, C++">
+
+            <label>About Me</label>
+            <textarea id="profileAbout" placeholder="Write about yourself"></textarea>
+
+            <button type="submit" class="btn-primary full-btn">Save Profile</button>
+        </form>
+        <p id="profileMessage"></p>
+    </div>
+</section>
+
+<script src="js/main.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>

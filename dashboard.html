@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | CareerConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jobs.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html">Career<span>Connect</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="internships.html">Internships</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+</header>
+
+<section class="dashboard-section">
+    <h1>My Dashboard</h1>
+    <p>Welcome to your CareerConnect dashboard.</p>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <i class="fas fa-paper-plane"></i>
+            <h2 id="totalApplications">0</h2>
+            <p>Total Applications</p>
+        </div>
+        <div class="stat-card">
+            <i class="fas fa-clock"></i>
+            <h2 id="pendingApplications">0</h2>
+            <p>Pending</p>
+        </div>
+        <div class="stat-card">
+            <i class="fas fa-check-circle"></i>
+            <h2 id="acceptedApplications">0</h2>
+            <p>Accepted</p>
+        </div>
+    </div>
+
+    <div class="dashboard-content">
+        <h2>My Applications</h2>
+        <div id="applicationList"></div>
+        <a href="jobs.html" class="btn-primary">Explore More Jobs</a>
+    </div>
+</section>
+
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/tracker.js"></script>
+</body>
+</html>
