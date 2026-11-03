@@ -33,5 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
             <span class="status">${app.status}</span>
         </div>
+        
     `).join("");
 });
